@@ -1,7 +1,32 @@
 ﻿@page "/"
+@using Developer.Assignment.Domain.Models
+@inject HttpClient Http
 
-<PageTitle>Home</PageTitle>
+<h3>Products</h3>
+@if (_products.Any())
+{
+    <ul>
+        @foreach (var product in _products)
+        {
+            <li>@product.Name - @product.Price <button @onclick="() => DeleteProduct(product.Id)">Delete</button></li>
+        }
+    </ul>
+}
+<EditForm Model="_newProduct" OnValidSubmit="CreateProduct">
+    <InputText @bind-Value="_newProduct.Name" />
+    <InputNumber @bind-Value="_newProduct.Price" />
+    <InputTextArea @bind-Value="_newProduct.Description" />
+    <button type="submit">Create</button>
+</EditForm>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+@code {
+    private IEnumerable<Product> _products = [];
+    private readonly Product _newProduct = new();
+    
+    protected override async Task OnInitializedAsync() =>
+        _products = await Http.GetFromJsonAsync<IEnumerable<Product>>("products");
+    
+    private async Task CreateProduct() => await Http.PostAsJsonAsync("products", _newProduct);
+    
+    private async Task DeleteProduct(int id) => await Http.DeleteAsync($"products/{id}");
+}

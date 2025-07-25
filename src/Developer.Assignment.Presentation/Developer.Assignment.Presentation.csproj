@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Developer.Assignment.Service.Defaults\Developer.Assignment.Service.Defaults.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Developer.Assignment.Applic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Developer.Assignment.Infrastructure", "src\Developer.Assignment.Infrastructure\Developer.Assignment.Infrastructure.csproj", "{93B8BEFA-28E3-42ED-80E9-A9C3A9CC54CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Developer.Assignment.Contacts", "src\Developer.Assignment.Contacts\Developer.Assignment.Contacts.csproj", "{771BF6AF-90B7-44FB-8EBA-560203154339}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Developer.Assignment.Contracts", "src\Developer.Assignment.Contracts\Developer.Assignment.Contracts.csproj", "{771BF6AF-90B7-44FB-8EBA-560203154339}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Developer.Assignment.Api.Tests.Integration", "tests\Developer.Assignment.Api.Tests.Integration\Developer.Assignment.Api.Tests.Integration.csproj", "{A35687CE-ED2B-4E40-9985-1931CF15CA4B}"
 EndProject

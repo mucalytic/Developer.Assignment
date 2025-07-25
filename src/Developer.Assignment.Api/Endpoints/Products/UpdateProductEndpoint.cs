@@ -1,5 +1,5 @@
 using Developer.Assignment.Application.Commands;
-using Developer.Assignment.Contacts.Products;
+using Developer.Assignment.Contracts.Products;
 using FastEndpoints;
 using MediatR;
 

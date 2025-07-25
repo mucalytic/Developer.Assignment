@@ -1,5 +1,5 @@
 using Developer.Assignment.Application.Queries;
-using Developer.Assignment.Contacts.Products;
+using Developer.Assignment.Contracts.Products;
 using Developer.Assignment.Api.Extensions;
 using FastEndpoints;
 using MediatR;

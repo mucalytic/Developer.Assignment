@@ -1,4 +1,4 @@
-namespace Developer.Assignment.Contacts.Dtos;
+namespace Developer.Assignment.Contracts.Dtos;
 
 public record ProductDto(
     int     Id,

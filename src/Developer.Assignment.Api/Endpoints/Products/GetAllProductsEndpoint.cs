@@ -1,4 +1,4 @@
-using Developer.Assignment.Contacts.Products;
+using Developer.Assignment.Contracts.Products;
 using Developer.Assignment.Domain.Interfaces;
 using Developer.Assignment.Api.Extensions;
 using FastEndpoints;

@@ -1,5 +1,5 @@
-using Developer.Assignment.Contacts.Dtos;
+using Developer.Assignment.Contracts.Dtos;
 
-namespace Developer.Assignment.Contacts.Products;
+namespace Developer.Assignment.Contracts.Products;
 
 public record UpdateProductRequest(int Id, string Name, decimal Price, string Description);

@@ -1,4 +1,4 @@
-using Developer.Assignment.Contacts.Dtos;
+using Developer.Assignment.Contracts.Dtos;
 using Developer.Assignment.Domain.Models;
 
 namespace Developer.Assignment.Api.Extensions;

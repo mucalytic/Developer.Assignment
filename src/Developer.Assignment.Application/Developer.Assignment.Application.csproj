@@ -10,4 +10,9 @@
     <ProjectReference Include="..\Developer.Assignment.Domain\Developer.Assignment.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentResults" Version="4.0.0" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+  </ItemGroup>
+
 </Project>

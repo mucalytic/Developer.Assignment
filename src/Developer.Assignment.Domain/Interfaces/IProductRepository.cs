@@ -1,12 +1,13 @@
 using Developer.Assignment.Domain.Models;
+using FluentResults;
 
 namespace Developer.Assignment.Domain.Interfaces;
 
 public interface IProductRepository
 {
     Task<IEnumerable<Product>> GetAllAsync();
-    Task<Product?>             GetByIdAsync(int id);
+    Task<Result<Product>>      GetByIdAsync(int id);
     Task<int>                  CreateAsync(Product product);
-    Task                       UpdateAsync(Product product);
-    Task                       DeleteAsync(int id);
+    Task<int>                  UpdateAsync(Product product);
+    Task<int>                  DeleteAsync(int id);
 }
